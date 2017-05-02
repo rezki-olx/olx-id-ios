@@ -1,0 +1,86 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>OTA Test App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body, html {
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        margin: 0;
+        padding: 0;
+        position: absolute;
+        top: 0; left: 0; bottom: 0; right: 0;
+        text-align: center;
+        background-color: #E8E1EF;
+      }
+
+      .button-install {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+        font-size: 16px;
+        line-height: 32px;
+        text-decoration: none;
+        color: #FFF;
+        background-color: #7748A2;
+        /*padding: 3rem;*/
+        border-radius: 3px;
+        width: 280px;
+        height: 32px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        margin: -16px 0 0 -140px;
+        display: block;
+      }
+      .button-text-low,
+      .button-text-high {
+        display: block;
+      }
+      .button-text-low {
+        position: absolute;
+        top: -54px;
+        font-size: 13px;
+        line-height: 16px;
+        color: #000;
+        width: 100%;
+      }
+      .note-group {
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: left;
+        font-size: 11px;
+        margin: 54px 0 0 -150px;
+        padding: 0 16px;
+        width: 300px;
+        position: absolute;
+        top: 50vh;
+        left: 50%;
+        color: #666;
+      }
+      .rn-title {
+        margin: 0 0 1em 0;
+      }
+      .rn-lists {
+        margin: 0;
+        padding: 0 1em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <a class="button-install" href="itms-services://?action=download-manifest&url=https://apps.olx.biz.id/ios/manifest.4.1.1.57.plist">
+          <span class="button-text-low">Here goes the v4.1.1.57, please uninstall and reinstall the app</span>
+          <span class="button-text-high">Tap Here to Install the Application</span>
+      </a>
+      <div class="note-group">
+        <p class="rn-title"><strong>Release Note:</strong></p>
+        <ul class="rn-lists">
+            <li> Bug Fixes </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
